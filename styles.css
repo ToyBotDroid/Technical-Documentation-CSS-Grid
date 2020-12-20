@@ -1,0 +1,200 @@
+/* 
+
+font-family: 'Courier New', Courier, monospace;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+  --code-bg-color: #ffe3d1f1;
+  --main-bg-color: ;
+  --secondary-color: ;
+  --code-selector-color: ;
+  --code-property-color: ;
+  --transition: all .5s ease;
+
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: -20px;
+}
+
+header {
+  font-size: 2rem;
+  padding: 2rem 1rem 1rem 0rem;
+  font-weight: 600;
+}
+
+h2 {
+  background-color: #444;
+  color: #fff;
+  display: inline-block;
+  padding: .5rem 1rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-size: 18px;
+}
+
+pre {
+  background-color: var(--code-bg-color);
+  border-left: 5px solid black;
+  overflow-x: scroll;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  /* overflow-x: scroll; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.note {
+  padding: 1rem;
+  border-left: 5px solid rgb(97, 216, 231);
+  color: rgb(39, 113, 231)
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  overflow-y: scroll;
+  background-color: lightsalmon;
+}
+
+#navbar header {
+  padding-left: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: underline;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  transition: var(--transition);
+  height: 100%;
+
+  /* To make links work when hover on its block */
+  
+  display: block;
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+#navbar ul {
+  padding: 0 .5rem;
+}
+
+#navbar li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+#navbar li:hover {
+  background-color: #131418;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+}
+
+#navbar li:hover a {
+  color: white;
+}
+
+
+
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+
+
+@media only screen and (max-width: 815px) {
+
+  /* For mobile phones: */
+  #navbar ul {}
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    /* margin-left: -10px; */
+  }
+}
+
+/* Extra Stylings */
+
+.emoji {
+  position: fixed;
+  z-index: 5;
+  bottom: 10px;
+  right: 10px;
+
+  font-weight: bold;
+  font-size: 2rem;
+  transform: scaleX(2);
+
+  background-color: black;
+  color: white;
+  opacity: .5;
+}
+
+
+#navbar::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+#navbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+#navbar::-webkit-scrollbar-thumb {
+  background: rgba(114, 109, 107, 0.849);
+  border-radius: 0.4rem;
+}
+
+#navbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(116, 94, 97, 0.849);
+}
