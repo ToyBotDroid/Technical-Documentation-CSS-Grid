@@ -6,6 +6,7 @@
     <meta name="viewport" content="widthdevice-width, initial-scale=1.0">
     <title> CSS Grid | Technical Documentation </title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
   <!--   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script> -->
   </head>
   
@@ -14,6 +15,9 @@
   <!-- Mav-Bar-->
   
     <nav id="navbar">
+      <div class="darkMode-div">
+        <button class = "darkMode-btn"> Dark Mode </button>
+      </div>  
       <header>CSS Grid Layout</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
@@ -68,7 +72,7 @@
           <p>
             A grid will typically have columns, rows, and then gaps between each row and column — commonly referred to as gutters.
           </p>
-          <img src="https://mdn.mozillademos.org/files/13899/grid.png" alt="grid-layout">
+          <img class="img" src="https://mdn.mozillademos.org/files/13899/grid.png" alt="grid-layout">
         </article>
       </section>
   
@@ -98,7 +102,7 @@
     }
             </code>
           </pre>
-          <img src="https://i.ibb.co/P9Fq0bz/grid-1.png" alt="grid-1" border="0">
+          <img class="img" src="https://i.ibb.co/P9Fq0bz/grid-1.png" alt="grid-1" border="0">
           <h2>Flex grids with fr units</h2>
           <p>
             In addition to creating grids using lengths and percentages, we can use the fr unit to flexibly size grid rows and columns. This unit represents one fraction of the available space in the grid container.
@@ -122,7 +126,7 @@
     }
             </code>
           </pre>
-          <img src="https://i.ibb.co/t4wf7hZ/grid-2.png" alt="grid-2" border="0">
+          <img class="img" src="https://i.ibb.co/t4wf7hZ/grid-2.png" alt="grid-2" border="0">
           <p class="note">
             <b>Note: </b>The fr unit distributes available space, not all space. Therefore if one of your tracks has something large inside it there will be less free space to share out.
           </p>
@@ -138,7 +142,7 @@
             </code>
           </pre>
           <p>These gaps can be any length unit or a percentage, but not an fr unit.</p>
-          <img src="https://i.ibb.co/yy9f6bS/grid-4.png" alt="grid-4" border="0">
+          <img class="img" src="https://i.ibb.co/yy9f6bS/grid-4.png" alt="grid-4" border="0">
 
           <h2>Repeating Track List</h2>
           <p>
@@ -167,7 +171,7 @@
     }
             </code>
           </pre>
-          <img src="https://i.ibb.co/yy9f6bS/grid-4.png" alt="grid-4" border="0">
+          <img class="img" src="https://i.ibb.co/yy9f6bS/grid-4.png" alt="grid-4" border="0">
 
           <h2>The minmax() function</h2>
           <p>Our 100-pixel tall tracks won’t be very useful if we add content into those tracks that is taller than 100 pixels, in which case it would cause an overflow. It might be better to have tracks that are at least 100 pixels tall and can still expand if more content gets into them. A fairly basic fact about the web is that you never really know how tall something is going to be; additional content or larger font sizes can cause problems with designs that attempt to be pixel perfect in every dimension.</p>
@@ -196,7 +200,7 @@
       grid-gap: 20px;
     }          </code>
           </pre>
-          <img src="https://i.ibb.co/mz21DBV/grid-5.png" alt="grid-5" border="0">
+          <img class="img" src="https://i.ibb.co/mz21DBV/grid-5.png" alt="grid-5" border="0">
         </article>
       </section>
   
@@ -239,7 +243,7 @@
       grid-row: 3;
           </code>
         </pre>
-        <img src="https://i.ibb.co/cD7kPKZ/grid-6.png" alt="grid-6" border="0">
+        <img class="img" src="https://i.ibb.co/cD7kPKZ/grid-6.png" alt="grid-6" border="0">
         <p class="note">Note: you can also use the value -1 to target the end column or row line, and count inwards from the end using negative values. Note that lines count always from the edges of the explicit grid, not the implicit grid.</p>
         </article>
       </section>

@@ -22,6 +22,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: -20px;
+  background-color: #fff;
 }
 
 header {
@@ -196,4 +197,41 @@ img {
 
 #navbar::-webkit-scrollbar-thumb:hover {
   background: rgba(116, 94, 97, 0.849);
+}
+
+/* 
+DarK Mode
+html { filter: invert(1); }
+*/
+
+.darkMode-html{
+  filter: invert(1);
+}
+
+/* img, picture, video, html {
+filter: invert(1);
+}  */
+
+.darkMode-img-vid {
+  filter: invert(1);
+}
+
+.darkMode-div{
+  width: 100%;
+  margin-top: 10px;
+}
+.darkMode-btn{
+  display: block;
+  margin: 5px auto 0px auto;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  transition: All .5s ease;
+}
+.darkMode-btn:hover{
+  transform: scale(1.051);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
