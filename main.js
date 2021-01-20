@@ -10,10 +10,12 @@ button.addEventListener('click', () => {
 function darkMode(){
   document.documentElement.classList.toggle('darkMode-html');
   // img.classList.toggle('darkMode-img-vid')
+  // for(let i = 0; i < img.length; i += 1) {
+  //   img.item(i).classList.toggle("darkMode-img-vid");
 
-  for(let i = 0; i < img.length; i += 1) {
-    img.item(i).classList.toggle("darkMode-img-vid");
-}
+  document.querySelectorAll('.img').forEach((item) => {
+    item.classList.toggle("darkMode-img-vid");
+  })
 }
 
 function toggleTextDarkMode(){
@@ -24,5 +26,20 @@ function toggleTextDarkMode(){
   }
   
 }
+
+document.querySelector('.emoji').addEventListener('click', () => {
+  scrollTo(0,0)
+})
+
+
+
+
+
+
+
+
+
+
+
 
 // https://forum.freecodecamp.org/t/cannot-read-property-toggle-of-undefined/412133

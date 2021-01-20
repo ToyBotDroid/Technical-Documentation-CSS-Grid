@@ -172,13 +172,13 @@ img {
   bottom: 10px;
   right: 10px;
 
-  font-weight: bold;
+  /* font-weight: bold;
   font-size: 2rem;
   transform: scaleX(2);
 
   background-color: black;
   color: white;
-  opacity: .5;
+  opacity: .5; */
 }
 
 
